@@ -1,0 +1,66 @@
+<section>
+  <h1 class="text-center">CONTACT COMPONENT</h1>
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="line mx-3"></div>
+    <i class="fa-solid fa-star"></i>
+    <div class="line m-3"></div>
+  </div>
+
+  <form
+    novalidate=""
+    action=""
+    class="w-50 p-3 mx-auto mt-5 ng-valid ng-touched ng-dirty"
+  >
+    <label
+      [ngClass]="name == '' ? 'show' : 'hide'"
+      for="userName"
+      class="position-relative labeltr"
+      >userName </label
+    ><input
+      [(ngModel)]="name"
+      id="userName"
+      type="text"
+      placeholder="userName"
+      name="userName"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+    /><label
+      [ngClass]="age == '' ? 'show' : 'hide'"
+      for="userAge"
+      class="position-relative labeltr"
+      >userAge </label
+    ><input
+      [(ngModel)]="age"
+      id="userAge"
+      type="text"
+      placeholder="userAge"
+      name="userName"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+    /><label
+      [ngClass]="email == '' ? 'show' : 'hide'"
+      for="userEmail"
+      class="position-relative labeltr"
+      >userEmail </label
+    ><input
+      [(ngModel)]="email"
+      id="userEmail"
+      type="text"
+      placeholder="userEmail"
+      name="userName"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+    /><label
+      [ngClass]="password == '' ? 'show' : 'hide'"
+      for="userPassword"
+      class="position-relative labeltr"
+      >userPassword </label
+    ><input
+      [(ngModel)]="password"
+      id="userPassword"
+      type="text"
+      placeholder="userPassword"
+      name="userName"
+      class="form-control border-0 border-bottom py-3 position-relative ng-valid ng-touched ng-dirty"
+    /><button class="btn mt-4 text-white" style="background-color: #1abc9c">
+      send Message
+    </button>
+  </form>
+</section>

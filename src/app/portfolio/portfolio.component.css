@@ -1,0 +1,53 @@
+section {
+  min-height: 100vh;
+}
+.myicon {
+  width: fit-content;
+}
+.myicon::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 5rem;
+  background-color: #2c3e50;
+  top: 6px;
+  right: 50px;
+}
+.myicon::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 5rem;
+  background-color: #2c3e50;
+  top: 6px;
+  left: 35px;
+}
+h2,
+i {
+  color: #2c3e50;
+}
+.layer {
+  top: 0;
+  left: 0;
+  background-color: #29b198b7;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.layer i {
+  font-size: 6rem;
+}
+.layer:hover {
+  opacity: 1;
+}
+.window {
+  background-color: #96b2daa8;
+  top: 0;
+  left: 0;
+}
+.window i {
+  top: 10px;
+  right: 5px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(255, 38, 0);
+}

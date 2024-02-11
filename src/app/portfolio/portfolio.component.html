@@ -1,0 +1,113 @@
+<section>
+  <div class="container pt-5">
+    <div class="title text-center pt-5">
+      <h2 class="fw-bolder fs-1">PORTFOLIO COMPONENT</h2>
+      <div
+        class="d-flex justify-content-center align-items-center myicon position-relative mx-auto mt-4"
+      >
+        <i class="fas fa-star me-3"> </i>
+      </div>
+    </div>
+    <div class="row py-4 g-5">
+      <div class="col-md-4">
+        <div class="myimg position-relative" (click)="imgWindow(window)">
+          <img src="./assets/1.png" class="w-100 card" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 card d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="myimg position-relative" (click)="imgWindow(window2)">
+          <img src="./assets/2.png" class="w-100 card" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 card d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="myimg position-relative" (click)="imgWindow(window3)">
+          <img src="./assets/3.png" class="w-100 card" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 card d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="myimg position-relative" (click)="imgWindow(window)">
+          <img src="./assets/1.png" class="w-100 card" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 card d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="myimg position-relative" (click)="imgWindow(window2)">
+          <img src="./assets/2.png" class="w-100 card" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 card d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="myimg position-relative" (click)="imgWindow(window3)">
+          <img src="./assets/3.png" class="w-100 card" alt="" />
+          <div
+            class="layer position-absolute w-100 h-100 card d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-plus text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container d-none" #window>
+    <div
+      class="window w-100 h-100 z-3 position-fixed d-flex justify-content-center align-items-center"
+    >
+      <div class="windowImg w-50">
+        <img src="./assets/1.png" class="w-100 card" alt="" />
+      </div>
+      <i
+        class="fa-solid fa-rectangle-xmark position-absolute"
+        (click)="closeImg(window)"
+      ></i>
+    </div>
+  </div>
+  <div class="container d-none" #window2>
+    <div
+      class="window w-100 h-100 z-3 position-fixed d-flex justify-content-center align-items-center"
+    >
+      <div class="windowImg w-50">
+        <img src="./assets/2.png" class="w-100 card" alt="" />
+      </div>
+      <i
+        class="fa-solid fa-rectangle-xmark position-absolute"
+        (click)="closeImg(window2)"
+      ></i>
+    </div>
+  </div>
+  <div class="container d-none" #window3>
+    <div
+      class="window w-100 h-100 z-3 position-fixed d-flex justify-content-center align-items-center"
+    >
+      <div class="windowImg w-50">
+        <img src="./assets/3.png" class="w-100 card" alt="" />
+      </div>
+      <i
+        class="fa-solid fa-rectangle-xmark position-absolute"
+        (click)="closeImg(window3)"
+      ></i>
+    </div>
+  </div>
+</section>
